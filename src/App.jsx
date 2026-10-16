@@ -97,7 +97,7 @@ export default function App() {
             <img 
               src="/Elegant Gold Lily Monogram Logo.png" 
               alt="LILYNT Logo" 
-              className="h-14 md:h-16 w-auto object-contain rounded-md"
+              className="h-14 md:h-16 w-auto object-contain rounded-md mix-blend-multiply"
             />
           </div>
 
@@ -297,11 +297,11 @@ export default function App() {
         <div className="max-w-7xl mx-auto px-4 grid grid-cols-1 md:grid-cols-4 gap-8 mb-12">
           <div>
             {/* Footer Logo */}
-            <div className="mb-6 bg-white inline-block p-2 rounded-md">
+            <div className="mb-6 bg-[#F8F5EE] inline-block p-2 rounded-md">
                 <img 
                   src="/Elegant Gold Lily Monogram Logo.png" 
                   alt="LILYNT Logo" 
-                  className="h-16 w-auto object-contain"
+                  className="h-16 w-auto object-contain mix-blend-multiply"
                 />
             </div>
             <p className="text-gray-300 text-sm mb-4">Rooted in Nature. Growing Beyond Boundaries. Premium consumer essentials delivered across India.</p>
