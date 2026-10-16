@@ -1,0 +1,7 @@
+<svg width="420" height="120" viewBox="0 0 420 120" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect x="8" y="8" width="104" height="104" rx="28" fill="#0B3B24"/>
+  <path d="M36 34C30 34 24 40 24 46V62C24 68 30 74 36 74H44C50 74 56 68 56 62V48H66C72 48 77 43 77 37C77 31 72 26 66 26H44C38 26 33 31 33 37V34H36Z" fill="#E5D5A2"/>
+  <path d="M52 80C60 72 68 68 78 68C88 68 96 72 104 80C96 90 88 96 78 96C68 96 60 90 52 80Z" fill="#E5D5A2" opacity="0.9"/>
+  <text x="136" y="72" font-family="Segoe UI, Arial, sans-serif" font-size="42" font-weight="700" letter-spacing="2" fill="#0B3B24">LILYNT</text>
+  <text x="139" y="94" font-family="Segoe UI, Arial, sans-serif" font-size="14" font-weight="600" letter-spacing="5" fill="#0B3B24" opacity="0.8">GROWTH • CARE</text>
+</svg>
