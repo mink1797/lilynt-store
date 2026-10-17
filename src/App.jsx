@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { Search, ShoppingCart, User, Heart, Menu, X, ChevronRight, Star, Truck, Shield, Clock } from 'lucide-react';
+import { Analytics } from '@vercel/analytics/react';
 
 // --- Sample Data ---
 const initialProducts = [
@@ -342,6 +343,7 @@ export default function App() {
           <p>&copy; {new Date().getFullYear()} LILYNT Group Private Limited. All rights reserved.</p>
         </div>
       </footer>
+      <Analytics />
     </div>
   );
 }
