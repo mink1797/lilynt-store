@@ -299,3 +299,119 @@ a:focus-visible,button:focus-visible,input:focus-visible,textarea:focus-visible{
  .modern-contact-inner{align-items:flex-start;flex-direction:column;gap:22px}
  .modern-contact-inner h2{font-size:26px}
 }
+
+/* Ventriloc-inspired editorial redesign for LILYNT — original brand styling */
+.ventriloc-inspired{background:#fbfaf6;color:#173e30}
+.vl-eyebrow{display:inline-block;font-size:9px;letter-spacing:2.1px;font-weight:700;color:#9a7b3e;line-height:1.7}
+.vl-hero{padding:72px 0 78px;background:#f7f6f0;overflow:hidden}
+.vl-hero-grid{display:grid;grid-template-columns:1.04fr .96fr;gap:65px;align-items:center}
+.vl-hero-copy{padding:22px 0 12px}
+.vl-hero h1{font:500 clamp(52px,6.2vw,82px)/1.04 'Playfair Display',serif;letter-spacing:-2.5px;color:#153d2e;margin:28px 0 24px}
+.vl-hero h1 em,.vl-intro h2 em,.vl-services-heading h2 em,.vl-approach h2 em{font-weight:500;color:#a48649}
+.vl-hero-copy>p{max-width:560px;font-size:14px;line-height:2;color:#65736b;margin:0}
+.vl-actions{display:flex;align-items:center;gap:28px;margin-top:34px}
+.vl-button{border:1px solid #174b35;background:#174b35;color:#fff;padding:15px 21px;display:inline-flex;align-items:center;gap:20px;font:600 11px 'DM Sans',sans-serif;letter-spacing:.2px;cursor:pointer;transition:background .2s,transform .2s}
+.vl-button:hover{background:#0d3425;transform:translateY(-2px)}
+.vl-text-button{border:0;background:none;padding:0 0 6px;border-bottom:1px solid #b9b29f;color:#244b39;display:inline-flex;align-items:center;gap:12px;font:600 11px 'DM Sans',sans-serif;cursor:pointer}
+.vl-text-button:hover{color:#a48649}
+.vl-hero-foot{display:flex;align-items:center;gap:12px;margin-top:64px;color:#7e887f;font-size:8px;letter-spacing:1.6px;font-weight:700}
+.vl-hero-foot i{display:block;width:35px;height:1px;background:#c6b78e}
+.vl-hero-visual{height:510px;position:relative;margin-right:12px}
+.vl-hero-image-main{position:absolute;right:0;top:0;width:78%;height:86%;overflow:hidden}
+.vl-hero-image-main img,.vl-hero-image-small img,.vl-approach-photo img{width:100%;height:100%;object-fit:cover;display:block}
+.vl-hero-image-small{position:absolute;left:0;bottom:0;width:45%;height:42%;border:9px solid #f7f6f0;overflow:hidden}
+.vl-hero-seal{position:absolute;left:4%;top:13%;width:112px;height:112px;border-radius:50%;background:#174b35;color:#f4e8c8;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:7px;text-align:center;font-size:8px;line-height:1.6;letter-spacing:1.4px;border:1px solid #d6bd7e;outline:1px solid #174b35;outline-offset:5px}
+.vl-visual-caption{position:absolute;right:0;bottom:0;font-size:8px;letter-spacing:1.6px;color:#7c877e}
+.vl-intro{padding:105px 0 112px;background:#fff}
+.vl-intro-grid{display:grid;grid-template-columns:.55fr 2fr;gap:40px}
+.vl-intro-grid>.vl-eyebrow{padding-top:13px}
+.vl-intro h2,.vl-services-heading h2,.vl-approach h2{font:500 clamp(40px,4.8vw,60px)/1.12 'Playfair Display',serif;letter-spacing:-1.5px;color:#173e30;margin:0}
+.vl-intro-bottom{display:flex;align-items:flex-end;justify-content:space-between;gap:35px;margin-top:28px}
+.vl-intro-bottom p{max-width:600px;margin:0;color:#6c7971;font-size:13px;line-height:2}
+.vl-intro-bottom .vl-text-button{white-space:nowrap}
+.vl-services{background:#f1f0e9;padding:105px 0 100px}
+.vl-services-heading{display:flex;align-items:flex-end;justify-content:space-between;gap:50px;margin-bottom:52px}
+.vl-services-heading h2{margin-top:16px}
+.vl-services-heading>p{max-width:365px;color:#69766e;font-size:13px;line-height:1.95;margin:0 0 5px}
+.vl-service-list{border-top:1px solid #d7d8ce}
+.vl-service-row{width:100%;display:grid;grid-template-columns:42px 48px minmax(190px,1fr) minmax(240px,1.15fr) 35px;align-items:center;gap:19px;padding:23px 10px;border:0;border-bottom:1px solid #d7d8ce;background:transparent;text-align:left;cursor:pointer;color:#173e30;transition:background .2s,padding .2s}
+.vl-service-row:hover{background:#faf9f4;padding-left:18px;padding-right:18px}
+.vl-service-index{font:italic 17px 'Playfair Display',serif;color:#a48649}
+.vl-service-icon{width:42px;height:42px;border:1px solid #d9d6c9;border-radius:50%;display:grid;place-items:center;color:#315d45}
+.vl-service-name{display:flex;flex-direction:column;gap:5px}
+.vl-service-name small{font-size:7px;letter-spacing:1.2px;color:#8a8e82;font-weight:700}
+.vl-service-name strong{font:500 22px 'Playfair Display',serif}
+.vl-service-desc{font-size:11px;line-height:1.8;color:#718077;max-width:430px}
+.vl-service-arrow{width:32px;height:32px;display:grid;place-items:center;border:1px solid #d8d6ca;border-radius:50%;color:#315d45;transition:background .2s,color .2s}
+.vl-service-row:hover .vl-service-arrow{background:#174b35;color:#fff;border-color:#174b35}
+.vl-all-services{display:flex;justify-content:space-between;align-items:center;padding-top:24px;color:#7b857c;font-size:10px}
+.vl-approach{padding:110px 0;background:#fff}
+.vl-approach-grid{display:grid;grid-template-columns:1fr 1fr;gap:90px;align-items:center}
+.vl-approach-photo{height:560px;position:relative}
+.vl-approach-photo img{height:100%}
+.vl-approach-photo>span{position:absolute;bottom:22px;left:22px;background:#f7f6f0;color:#174b35;padding:12px 15px;font-size:8px;font-weight:700;letter-spacing:1.8px}
+.vl-approach h2{margin:17px 0 22px;font-size:clamp(39px,4.4vw,55px)}
+.vl-approach-copy>p{font-size:13px;line-height:2;color:#6b7970;margin:0;max-width:520px}
+.vl-principles{margin:30px 0 30px;border-top:1px solid #e1e0d7}
+.vl-principles article{display:grid;grid-template-columns:35px 1fr;gap:14px;padding:15px 0;border-bottom:1px solid #e1e0d7}
+.vl-principles article>b{font:italic 16px 'Playfair Display',serif;color:#a48649}
+.vl-principles article span{display:flex;flex-direction:column;gap:4px}
+.vl-principles article strong{font:500 17px 'Playfair Display',serif;color:#173e30}
+.vl-principles article small{font-size:10px;color:#7b877e}
+.vl-contact{padding:70px 0;background:#174b35;color:#fff}
+.vl-contact-inner{display:flex;align-items:center;justify-content:space-between;gap:35px}
+.vl-contact .vl-eyebrow{color:#d8c28a}
+.vl-contact h2{font:500 clamp(30px,4vw,48px)/1.15 'Playfair Display',serif;color:#fff;margin:14px 0}
+.vl-contact p{font-size:12px;color:#d0ddd3;margin:0}
+.vl-button-light{background:#f4eedf;color:#174b35;border-color:#f4eedf}
+.vl-button-light:hover{background:#e6d9b9;color:#123b2a}
+@media(max-width:900px){
+ .vl-hero-grid{gap:30px}
+ .vl-hero-visual{height:420px}
+ .vl-hero h1{font-size:clamp(46px,6vw,64px)}
+ .vl-intro-grid{grid-template-columns:.35fr 2fr;gap:25px}
+ .vl-approach-grid{gap:45px}
+ .vl-approach-photo{height:470px}
+ .vl-service-row{grid-template-columns:30px 42px minmax(150px,1fr) 30px;gap:13px}
+ .vl-service-desc{display:none}
+}
+@media(max-width:600px){
+ .vl-hero{padding:48px 0 58px}
+ .vl-hero-grid{grid-template-columns:1fr;gap:35px}
+ .vl-hero h1{font-size:clamp(45px,12vw,60px);letter-spacing:-1.5px;margin:20px 0}
+ .vl-hero-copy>p{font-size:13px;line-height:1.9}
+ .vl-actions{gap:18px;flex-wrap:wrap;margin-top:25px}
+ .vl-hero-foot{margin-top:35px;font-size:7px}
+ .vl-hero-visual{height:330px;margin-right:0}
+ .vl-hero-image-main{width:82%;height:85%}
+ .vl-hero-image-small{width:46%;height:43%;border-width:6px}
+ .vl-hero-seal{width:86px;height:86px;font-size:7px;left:2%;top:12%}
+ .vl-visual-caption{font-size:6px;letter-spacing:1px}
+ .vl-intro{padding:68px 0 72px}
+ .vl-intro-grid{display:block}
+ .vl-intro-grid>.vl-eyebrow{margin-bottom:22px}
+ .vl-intro h2,.vl-services-heading h2{font-size:39px}
+ .vl-intro-bottom{display:block;margin-top:20px}
+ .vl-intro-bottom p{font-size:12px;line-height:1.9;margin-bottom:18px}
+ .vl-services{padding:70px 0}
+ .vl-services-heading{display:block;margin-bottom:30px}
+ .vl-services-heading>p{margin-top:17px;font-size:12px}
+ .vl-service-row{grid-template-columns:25px 36px minmax(0,1fr) 28px;gap:10px;padding:17px 0}
+ .vl-service-row:hover{padding-left:5px;padding-right:5px}
+ .vl-service-icon{width:34px;height:34px}
+ .vl-service-icon svg{width:18px;height:18px}
+ .vl-service-name small{font-size:6px;letter-spacing:.7px}
+ .vl-service-name strong{font-size:18px}
+ .vl-service-index{font-size:14px}
+ .vl-service-arrow{width:27px;height:27px}
+ .vl-service-arrow svg{width:16px;height:16px}
+ .vl-all-services{align-items:flex-start;flex-direction:column;gap:14px;font-size:9px}
+ .vl-approach{padding:70px 0}
+ .vl-approach-grid{grid-template-columns:1fr;gap:34px}
+ .vl-approach-photo{height:300px}
+ .vl-approach h2{font-size:38px}
+ .vl-approach-copy>p{font-size:12px}
+ .vl-contact{padding:52px 0}
+ .vl-contact-inner{align-items:flex-start;flex-direction:column;gap:24px}
+ .vl-contact h2{font-size:32px}
+}
