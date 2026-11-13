@@ -1,7 +1,17 @@
-
-
+<?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-  <url>
-    <loc>https://lilynt.com/</loc>
-  </url>
+<url><loc>https://lilynt.com/</loc></url><url><loc>https://lilynt.com/about/</loc></url><url><loc>https://lilynt.com/contact/</loc></url>
+<url><loc>https://lilynt.com/food-spices/</loc></url>
+<url><loc>https://lilynt.com/home-personal-care/</loc></url>
+<url><loc>https://lilynt.com/agro-plantation/</loc></url>
+<url><loc>https://lilynt.com/natural-herbal/</loc></url>
+<url><loc>https://lilynt.com/water-environment/</loc></url>
+<url><loc>https://lilynt.com/industrial-engineering/</loc></url>
+<url><loc>https://lilynt.com/fashion-lifestyle/</loc></url>
+<url><loc>https://lilynt.com/retail-distribution/</loc></url>
+<url><loc>https://lilynt.com/hotels-resorts/</loc></url>
+<url><loc>https://lilynt.com/restaurants-catering/</loc></url>
+<url><loc>https://lilynt.com/weddings-events/</loc></url>
+<url><loc>https://lilynt.com/agroforestry-tours/</loc></url>
+<url><loc>https://lilynt.com/business-solutions/</loc></url>
 </urlset>
