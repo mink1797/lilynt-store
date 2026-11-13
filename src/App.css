@@ -415,3 +415,23 @@ a:focus-visible,button:focus-visible,input:focus-visible,textarea:focus-visible{
  .vl-contact-inner{align-items:flex-start;flex-direction:column;gap:24px}
  .vl-contact h2{font-size:32px}
 }
+
+/* Scroll-linked motion: soft reveals, stagger and restrained parallax */
+.motion-reveal{opacity:0;transform:translate3d(0,34px,0);transition:opacity .85s cubic-bezier(.2,.7,.2,1),transform .95s cubic-bezier(.2,.7,.2,1);transition-delay:var(--motion-delay,0ms);will-change:opacity,transform}
+.motion-reveal.motion-visible{opacity:1;transform:translate3d(0,0,0)}
+.vl-hero-visual.motion-reveal{transform:translate3d(0,44px,0) scale(.985)}
+.vl-hero-visual.motion-reveal.motion-visible{transform:translate3d(0,0,0) scale(1)}
+.vl-service-row.motion-reveal{transform:translate3d(0,24px,0)}
+.vl-service-row.motion-reveal.motion-visible{transform:translate3d(0,0,0)}
+.vl-hero-image-main img,.vl-approach-photo img{transform:scale(1.08);transition:transform 1.4s cubic-bezier(.2,.7,.2,1)}
+.vl-hero-visual.motion-visible .vl-hero-image-main img,.vl-approach-photo.motion-visible img{transform:scale(1)}
+@supports (animation-timeline:view()){
+ .vl-hero-image-main img{animation:vl-parallax linear both;animation-timeline:view();animation-range:entry 0% exit 100%}
+ .vl-approach-photo img{animation:vl-image-drift linear both;animation-timeline:view();animation-range:entry 0% exit 100%}
+ @keyframes vl-parallax{from{transform:scale(1.12) translateY(-2.5%)}to{transform:scale(1.12) translateY(2.5%)}}
+ @keyframes vl-image-drift{from{transform:scale(1.1) translateY(2%)}to{transform:scale(1.1) translateY(-2%)}}
+}
+@media(prefers-reduced-motion:reduce){
+ .motion-reveal,.motion-reveal.motion-visible,.vl-hero-visual.motion-reveal,.vl-hero-visual.motion-reveal.motion-visible{opacity:1;transform:none;transition:none;will-change:auto}
+ .vl-hero-image-main img,.vl-approach-photo img{transform:none!important;animation:none!important;transition:none!important}
+}
