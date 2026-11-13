@@ -20,7 +20,7 @@ const divisions = [
 const pages = Object.fromEntries(divisions.map(d=>[d.slug,d]));
 const photo = id => `https://images.unsplash.com/${id}?auto=format&fit=crop&w=1200&q=85`;
 const pathFor = slug => slug ? `/${slug}/` : '/';
-function routeFromPath(){const p=window.location.pathname.replace(/^\\/+|\\/+$/g,'');return pages[p]?p:(p==='about'?'about':p==='contact'?'contact':'home');}
+function routeFromPath(){const p=window.location.pathname.replace(/^\/+|\/+$/g,'');return pages[p]?p:(p==='about'?'about':p==='contact'?'contact':'home');}
 
 function Header({active,onNavigate}) {
  const [open,setOpen]=useState(false),[mega,setMega]=useState(false),[search,setSearch]=useState(false),[term,setTerm]=useState('');
