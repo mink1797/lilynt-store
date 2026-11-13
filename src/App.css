@@ -191,3 +191,111 @@ a:focus-visible,button:focus-visible,input:focus-visible,textarea:focus-visible{
 @media(prefers-reduced-motion:reduce){
  *,*::before,*::after{scroll-behavior:auto!important;transition:none!important;animation:none!important}
 }
+
+
+/* LILYNT corporate homepage — portfolio-led redesign */
+.modern-hero{position:relative;min-height:690px;display:flex;align-items:center;color:#fff;overflow:hidden;background:#092d20}
+.modern-hero-photo{position:absolute;inset:0;background-size:cover;background-position:center 48%;transform:scale(1.015)}
+.modern-hero-inner{position:relative;z-index:1;min-height:690px;display:flex;align-items:center;justify-content:space-between;padding-top:45px;padding-bottom:70px}
+.modern-hero-copy{max-width:780px;padding:55px 0}
+.modern-kicker{font-size:9px!important;letter-spacing:3px!important;color:#e1c77f!important;font-weight:700;margin:28px 0 12px!important}
+.modern-hero h1{font:500 clamp(55px,7.2vw,94px)/1.02 'Playfair Display',serif;letter-spacing:-2.5px;margin:0 0 24px;text-wrap:balance}
+.modern-hero h1 em,.modern-intro h2 em,.modern-section-top h2 em,.modern-principles h2 em,.modern-feature h2 em{color:#d9bd77;font-weight:500}
+.modern-hero-desc{font-size:15px;line-height:1.95;color:#e3e9e3;max-width:560px;margin:0}
+.modern-hero .hero-buttons{margin-top:32px}
+.modern-hero-note{align-self:flex-end;display:flex;align-items:center;gap:15px;margin-bottom:2px;padding:18px 22px;border-left:1px solid rgba(231,208,145,.7);background:rgba(5,35,24,.34);backdrop-filter:blur(8px)}
+.modern-hero-note>span{font:italic 26px 'Playfair Display',serif;color:#dfc47f}
+.modern-hero-note div{display:flex;flex-direction:column;gap:5px}
+.modern-hero-note b{font:500 13px 'DM Sans',sans-serif;color:#fff}
+.modern-hero-note small{font-size:10px;color:#d4ded6}
+.modern-intro{display:grid;grid-template-columns:.55fr 2fr;gap:45px;padding-top:118px;padding-bottom:122px}
+.modern-intro-label{display:flex;align-items:flex-start;gap:25px;padding-top:13px}
+.modern-vertical-line{height:130px;width:1px;background:#d7c99e}
+.modern-intro-main h2,.modern-section-top h2,.modern-principles h2,.modern-feature h2{font:500 clamp(38px,4.7vw,59px)/1.13 'Playfair Display',serif;color:var(--green);letter-spacing:-1.5px;margin:0}
+.modern-intro-main h2 em,.modern-section-top h2 em{color:#a88944}
+.modern-intro-bottom{display:flex;align-items:flex-end;justify-content:space-between;gap:45px;margin-top:28px}
+.modern-intro-bottom p{font-size:14px;line-height:2;color:var(--muted);max-width:610px;margin:0}
+.modern-intro-bottom .text-link{white-space:nowrap;border-bottom:1px solid rgba(18,63,46,.22);padding-bottom:7px}
+.modern-portfolio{background:#eeede5;padding:104px 0 112px}
+.modern-section-top{display:flex;justify-content:space-between;align-items:flex-end;gap:45px;margin-bottom:45px}
+.modern-section-top h2{margin-top:13px}
+.modern-section-top>p{max-width:360px;font-size:13px;line-height:1.9;color:var(--muted);margin:0 0 5px}
+.modern-business-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:22px}
+.modern-business-card{display:flex;flex-direction:column;min-width:0;background:#fbfaf6;border:1px solid rgba(21,61,43,.1);border-radius:4px;overflow:hidden;color:inherit;text-decoration:none;transition:transform .3s,box-shadow .3s,border-color .3s}
+.modern-business-card:hover{transform:translateY(-6px);box-shadow:0 18px 45px rgba(14,43,29,.11);border-color:rgba(201,163,79,.55)}
+.modern-business-image{height:218px;position:relative;overflow:hidden;background:#e4e5d9}
+.modern-business-image img{width:100%;height:100%;object-fit:cover;transition:transform .65s}
+.modern-business-card:hover .modern-business-image img{transform:scale(1.06)}
+.modern-card-number{position:absolute;top:15px;left:16px;color:#fff;font:italic 18px 'Playfair Display',serif;text-shadow:0 1px 8px #0008}
+.modern-card-icon{position:absolute;bottom:0;left:20px;width:43px;height:43px;display:grid;place-items:center;background:#f8f6ef;color:var(--green);border-radius:3px 3px 0 0}
+.modern-business-copy{padding:25px 24px 26px;display:flex;flex:1;flex-direction:column;align-items:flex-start}
+.modern-business-copy h3{font:500 24px 'Playfair Display',serif;color:var(--green);margin:10px 0}
+.modern-business-copy p{font-size:12px;line-height:1.9;color:var(--muted);margin:0 0 20px}
+.modern-discover{margin-top:auto;display:inline-flex;align-items:center;gap:8px;color:var(--green);font-size:11px;font-weight:700;border-bottom:1px solid rgba(18,63,46,.2);padding-bottom:6px}
+.modern-principles{background:linear-gradient(115deg,#082c20,#164b35);color:#fff;padding:86px 0}
+.modern-principles-inner{display:grid;grid-template-columns:1fr 1.15fr;gap:100px;align-items:start}
+.modern-principles-heading{position:sticky;top:40px}
+.modern-principles h2{color:#fff;margin-top:18px}
+.modern-principles-list article{display:grid;grid-template-columns:44px 1fr;gap:18px;padding:22px 0;border-bottom:1px solid rgba(255,255,255,.16)}
+.modern-principles-list article:first-child{padding-top:0}
+.modern-principles-list article>span{font:italic 18px 'Playfair Display',serif;color:#d9bd77}
+.modern-principles-list h3{font:500 21px 'Playfair Display',serif;margin:0 0 7px;color:#fff}
+.modern-principles-list p{font-size:12px;line-height:1.85;color:#c6d3ca;margin:0;max-width:440px}
+.modern-feature{display:grid;grid-template-columns:1fr 1fr;background:#f8f6ef;min-height:500px}
+.modern-feature-image{background-size:cover;background-position:center;min-height:490px}
+.modern-feature-copy{align-self:center;padding:85px clamp(35px,7vw,110px)}
+.modern-feature h2{margin:17px 0 20px;font-size:clamp(36px,4vw,52px)}
+.modern-feature h2 em{color:#a88944}
+.modern-feature-copy p{font-size:13px;line-height:2;color:var(--muted);max-width:510px;margin-bottom:27px}
+.modern-contact-cta{background:#eae6da;padding:62px 0}
+.modern-contact-inner{display:flex;align-items:center;justify-content:space-between;gap:35px}
+.modern-contact-inner h2{font:500 clamp(25px,3vw,36px)/1.25 'Playfair Display',serif;color:var(--green);max-width:700px;margin:12px 0 8px}
+.modern-contact-inner p{font-size:12px;color:var(--muted);margin:0}
+@media(max-width:900px){
+ .modern-hero,.modern-hero-inner{min-height:630px}
+ .modern-hero-inner{align-items:flex-end}
+ .modern-hero-copy{padding:45px 0 85px}
+ .modern-hero-note{display:none}
+ .modern-intro{grid-template-columns:.35fr 2fr;gap:25px;padding-top:85px;padding-bottom:90px}
+ .modern-intro-bottom{align-items:flex-start;flex-direction:column;gap:20px}
+ .modern-business-grid{grid-template-columns:repeat(2,minmax(0,1fr))}
+ .modern-principles-inner{gap:45px}
+ .modern-feature-copy{padding:55px 35px}
+}
+@media(max-width:600px){
+ .modern-hero,.modern-hero-inner{min-height:650px}
+ .modern-hero-photo{background-position:58% center}
+ .modern-hero-inner{padding-top:20px;padding-bottom:65px}
+ .modern-hero-copy{padding:30px 0 20px}
+ .modern-kicker{margin-top:23px!important;font-size:8px!important;letter-spacing:2px!important}
+ .modern-hero h1{font-size:clamp(43px,11vw,58px);letter-spacing:-1.3px;line-height:1.08}
+ .modern-hero-desc{font-size:13px;line-height:1.85;max-width:440px}
+ .modern-hero .hero-buttons{gap:10px;flex-wrap:wrap}
+ .modern-intro{display:block;padding-top:68px;padding-bottom:72px}
+ .modern-intro-label{padding:0;margin-bottom:24px}
+ .modern-vertical-line{height:1px;width:48px}
+ .modern-intro-main h2,.modern-section-top h2{font-size:37px}
+ .modern-intro-bottom{margin-top:20px;gap:14px}
+ .modern-intro-bottom p{font-size:13px;line-height:1.9}
+ .modern-portfolio{padding:70px 0 76px}
+ .modern-section-top{display:block;margin-bottom:28px}
+ .modern-section-top>p{margin-top:15px;font-size:12px}
+ .modern-business-grid{grid-template-columns:1fr;gap:15px}
+ .modern-business-image{height:205px}
+ .modern-business-copy{padding:21px}
+ .modern-business-copy h3{font-size:23px}
+ .modern-business-copy p{margin-bottom:16px}
+ .modern-principles{padding:65px 0}
+ .modern-principles-inner{grid-template-columns:1fr;gap:28px}
+ .modern-principles-heading{position:static}
+ .modern-principles h2{font-size:37px}
+ .modern-principles-list article{grid-template-columns:32px 1fr;gap:12px;padding:18px 0}
+ .modern-principles-list h3{font-size:20px}
+ .modern-feature{grid-template-columns:1fr}
+ .modern-feature-image{min-height:255px}
+ .modern-feature-copy{padding:48px 22px 54px}
+ .modern-feature h2{font-size:35px}
+ .modern-contact-cta{padding:45px 0}
+ .modern-contact-inner{align-items:flex-start;flex-direction:column;gap:22px}
+ .modern-contact-inner h2{font-size:26px}
+}
