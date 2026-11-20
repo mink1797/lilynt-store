@@ -473,3 +473,6 @@ a:focus-visible,button:focus-visible,input:focus-visible,textarea:focus-visible{
 @media(max-width:800px){.appointment-layout{grid-template-columns:1fr;gap:35px;padding-top:45px}.appointment-info{padding-top:0}.appointment-info h2 br{display:none}}
 @media(max-width:520px){.appointment-hero{padding:55px 0 35px}.appointment-card{padding:23px 18px}.appointment-fields{grid-template-columns:1fr}.appointment-success dl div{align-items:flex-start;flex-direction:column;gap:4px}.appointment-success dd{text-align:left}}
 @media print{.site-header,.footer,.appointment-hero,.appointment-info,.appointment-success .btn{display:none!important}.appointment-layout{display:block;padding:0}.appointment-card{box-shadow:none;border:0}.appointment-page{background:#fff}}
+
+.appointment-card .appointment-consent{display:flex;flex-direction:row;align-items:flex-start;gap:10px;font-size:10px;line-height:1.7;font-weight:400;color:#66756b}
+.appointment-card .appointment-consent input{width:15px;height:15px;flex:0 0 15px;margin:1px 0 0;accent-color:#174b35}
