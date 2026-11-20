@@ -48,12 +48,12 @@ export default async function handler(req, res) {
   const service = String(body.service || '').trim();
   const message = String(body.message || '').trim().slice(0, 500);
   if (!/^[6-9]\d{9}$/.test(phone) || !/^\d{6}$/.test(otp)) return json(res, 400, { error: 'Enter a valid mobile number and 6-digit OTP.' });
-  if (name.length < 2 || name.length > 80 || !/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email) || email.length > 120 || !/^\d{4}-\d{2}-\d{2}$/.test(date) || !time || !service) {
+  if (name.length < 2 || name.length > 80 || !/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email) || email.length > 120 || !/^\d{4}-\d{2}-\d{2}$/.test(date) || !['10:00 AM','11:00 AM','12:00 PM','02:00 PM','03:00 PM','04:00 PM','05:00 PM'].includes(time) || !service || service.length > 80) {
     return json(res, 400, { error: 'Please check the appointment details and try again.' });
   }
   const parts = new Intl.DateTimeFormat('en-CA', { timeZone: 'Asia/Kolkata', year: 'numeric', month: '2-digit', day: '2-digit' }).formatToParts(new Date());
   const today = `${parts.find(p => p.type === 'year').value}-${parts.find(p => p.type === 'month').value}-${parts.find(p => p.type === 'day').value}`;
-  if (!/^\d{4}-\d{2}-\d{2}$/.test(date) || date < today) return json(res, 400, { error: 'Please choose today or a future appointment date.' });
+  const parsedDate = new Date(`${date}T00:00:00.000Z`);\n  if (!/^\d{4}-\d{2}-\d{2}$/.test(date) || Number.isNaN(parsedDate.getTime()) || parsedDate.toISOString().slice(0, 10) !== date || date < today) return json(res, 400, { error: 'Please choose today or a future appointment date.' });
 
   try {
     const year = new Intl.DateTimeFormat('en', { timeZone: 'Asia/Kolkata', year: 'numeric' }).format(new Date());
