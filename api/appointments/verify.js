@@ -51,10 +51,9 @@ export default async function handler(req, res) {
   if (name.length < 2 || name.length > 80 || !/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email) || email.length > 120 || !/^\d{4}-\d{2}-\d{2}$/.test(date) || !time || !service) {
     return json(res, 400, { error: 'Please check the appointment details and try again.' });
   }
-  const selectedDate = new Date(`${date}T00:00:00+05:30`);
-  const today = new Date(new Date().toLocaleString('en-US', { timeZone: 'Asia/Kolkata' }));
-  today.setHours(0, 0, 0, 0);
-  if (Number.isNaN(selectedDate.getTime()) || selectedDate < today) return json(res, 400, { error: 'Please choose today or a future appointment date.' });
+  const parts = new Intl.DateTimeFormat('en-CA', { timeZone: 'Asia/Kolkata', year: 'numeric', month: '2-digit', day: '2-digit' }).formatToParts(new Date());
+  const today = `${parts.find(p => p.type === 'year').value}-${parts.find(p => p.type === 'month').value}-${parts.find(p => p.type === 'day').value}`;
+  if (!/^\d{4}-\d{2}-\d{2}$/.test(date) || date < today) return json(res, 400, { error: 'Please choose today or a future appointment date.' });
 
   try {
     const year = new Intl.DateTimeFormat('en', { timeZone: 'Asia/Kolkata', year: 'numeric' }).format(new Date());
